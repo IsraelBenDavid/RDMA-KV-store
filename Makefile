@@ -10,7 +10,7 @@ OBJ = $(SRC:.c=.o)
 # Tar command
 TAR = tar
 TARFLAGS = -cvf
-TARNAME = 318573870_208632281.tgz
+TARNAME = tar_file.tgz
 
 # Compiler and flags
 CC = gcc
@@ -37,3 +37,4 @@ clean:
 # Target to create a tarball of the source files
 tar:
 	$(TAR) $(TARFLAGS) $(TARNAME) $(SRC) $(HEADERS) Makefile
+
